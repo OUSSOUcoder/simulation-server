@@ -172,7 +172,7 @@ function MultiUserSimulation() {
 
   // Socket.io connection
   useEffect(() => {
-    const newSocket = io('http://localhost:3001', {
+    const newSocket = io('https://simulation-server-3.onrender.com', {
       transports: ['websocket'],
       reconnection: true,
       reconnectionAttempts: 5,
